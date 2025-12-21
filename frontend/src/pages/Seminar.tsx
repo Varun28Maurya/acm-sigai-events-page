@@ -256,7 +256,7 @@ const Seminar = () => {
 
       try {
         // 1️⃣ Try fetching from MongoDB backend
-        const res = await fetch(`http://localhost:5000/api/events/${id}`);
+        const res = await fetch(`https://acm-blog-backend.vercel.app/api/events/${id}`);
 
         if (res.ok) {
           const dbEvent = await res.json();
