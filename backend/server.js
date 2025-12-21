@@ -3,6 +3,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import eventRoutes from "./routes/events.js";
+import { connectDB } from "./config/db.js";
+
 
 dotenv.config();
 
@@ -16,9 +18,7 @@ app.use("/api/events", eventRoutes);
 
 // DB CONNECTION
 mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ MongoDB Connected"))
-  .catch(err => console.error("❌ MongoDB Error:", err));
+  await connectDB();
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>

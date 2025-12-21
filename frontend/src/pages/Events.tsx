@@ -316,7 +316,7 @@ const Events = () => {
 
     try {
       // 1️⃣ Fetch events from MongoDB backend
-      const res = await fetch("http://localhost:5000/api/events");
+      const res = await fetch("https://acm-blog-backend.vercel.app/api/events");
       const dbEvents = await res.json();
 
       // 2️⃣ Merge rawEventsData + dbEvents

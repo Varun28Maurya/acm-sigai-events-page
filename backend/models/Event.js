@@ -12,8 +12,6 @@ const eventSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-
-    // ✅ images can be 1, 2, 5, 10 — NO LIMIT
     image: [
       {
         url: {
@@ -25,12 +23,10 @@ const eventSchema = new mongoose.Schema(
         },
       },
     ],
-
     date: {
-      type: String,
+      type: Date,
       required: true,
     },
-
     optionDate: {
       type: Number,
     },
@@ -40,7 +36,6 @@ const eventSchema = new mongoose.Schema(
   }
 );
 
-// ✅ Always send _id as string to frontend
 eventSchema.set("toJSON", {
   transform: (_, ret) => {
     ret._id = ret._id.toString();
@@ -48,7 +43,6 @@ eventSchema.set("toJSON", {
   },
 });
 
-// ✅ Correct model naming (important)
-const Event = mongoose.model("events", eventSchema);
+const Event = mongoose.model("Event", eventSchema);
 
 export default Event;
