@@ -4,7 +4,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-border/30 py-12 px-8">
+    <footer className="bg-background border-t border-border/30 py-12 px-8">
       {/* Map Section */}
       <div className="mapcontainer w-full flex justify-center py-10 bg-background">
         <div className="w-[90%] md:w-[80%] lg:w-[70%] overflow-hidden rounded-2xl shadow-lg border border-border">
@@ -33,27 +33,27 @@ export const Footer = () => {
           <h3 className="text-lg font-bold mb-4">Pages</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/events" className="text-foreground/70 hover:text-accent transition-colors">
+              <a href="https://acmsigai.tcetmumbai.in/" className="text-foreground/70 hover:text-accent transition-colors">
                 Home
               </a>
             </li>
             <li>
-              <a href="/events-list" className="text-foreground/70 hover:text-accent transition-colors">
+              <a href="https://acmsigai.tcetmumbai.in/Events" className="text-foreground/70 hover:text-accent transition-colors">
                 Events
               </a>
             </li>
             <li>
-              <a href="#team" className="text-foreground/70 hover:text-accent transition-colors">
+              <a href="https://acmsigai.tcetmumbai.in/Our-Team" className="text-foreground/70 hover:text-accent transition-colors">
                 Team
               </a>
             </li>
             <li>
-              <a href="#publications" className="text-foreground/70 hover:text-accent transition-colors">
+              <a href="https://acmsigai.tcetmumbai.in/Publications" className="text-foreground/70 hover:text-accent transition-colors">
                 Publications
               </a>
             </li>
             <li>
-              <a href="#blogs" className="text-foreground/70 hover:text-accent transition-colors">
+              <a href="https://acmsigai.tcetmumbai.in/Blogs" className="text-foreground/70 hover:text-accent transition-colors">
                 Blogs
               </a>
             </li>
@@ -70,11 +70,11 @@ export const Footer = () => {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 flex-shrink-0" />
-              <span className="text-foreground/70">sigai@tcet.ac.in</span>
+              <span className="text-foreground/70">acmsigai10@gmail.com</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 flex-shrink-0" />
-              <span className="text-foreground/70">+91 12345 67890</span>
+              <span className="text-foreground/70">+91 93265 90260</span>
             </li>
           </ul>
         </div>
