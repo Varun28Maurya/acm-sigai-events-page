@@ -402,10 +402,10 @@ const Events = () => {
 
 
           <section className="py-12 overflow-visible">
-            {events2026.length > 0 && (
-  <div className="mb-16 overflow-visible">
-    <h2 className="text-6xl font-bold px-8 mb-8">2026 EVENTS</h2>
+<div className="mb-16 overflow-visible">
+  <h2 className="text-6xl font-bold px-8 mb-8">2026 EVENTS</h2>
 
+  {events2026.length > 0 ? (
     <div className="overflow-x-auto overflow-y-visible">
       <div className="flex gap-6 px-8 pb-4 overflow-visible">
         {events2026.map((event, index) => (
@@ -422,8 +422,19 @@ const Events = () => {
         ))}
       </div>
     </div>
-  </div>
-)}
+  ) : (
+    <div className="px-8 py-16">
+      <div className="text-3xl font-semibold text-white/70 tracking-wide">
+        Coming Soon
+      </div>
+      <p className="mt-2 text-lg text-white/40">
+        Events for 2026 will be announced shortly.
+      </p>
+    </div>
+  )}
+</div>
+
+
 
             <div className="mb-16 overflow-visible">
               <h2 className="text-6xl font-bold px-8 mb-8">2025 EVENTS</h2>
