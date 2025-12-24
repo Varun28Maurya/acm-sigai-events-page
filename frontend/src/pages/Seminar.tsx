@@ -305,18 +305,12 @@ const Seminar = () => {
 
         <div className="max-w-4xl">
           <h1
-            className="
-    font-bold 
-    leading-tight 
-    mb-6
-    text-6xl
-    sm:text-7xl
-    md:text-7xl
-    lg:text-7xl
-    xl:text-8xl
-    2xl:text-9xl
+  className="
+    font-bold text-white leading-tight break-words mb-6
+    text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl
   "
-          >
+>
+
             {event.title}
           </h1>
 
@@ -414,3 +408,4 @@ const Seminar = () => {
 };
 
 export default Seminar;
+
